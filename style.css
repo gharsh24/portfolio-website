@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border: 1px solid black; 
+    background-color:white;
+    transition: background-color 0.5s ease;
+}
+
+.box h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.7rem;
+    cursor: pointer;
+
+    background-image: linear-gradient(
+      to right,
+      #C58940,
+      #C58940 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+.box:hover {
+    background-color: wheat;
+}
+
+.circle{
+    position: absolute;
+    left:43vw;
+    top: 30vh;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+/* Hover effects */
+
+.box h1:before {
+    content: '';
+    background: #C58940;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+}
+
+.box h1:hover {
+    background-position: 0;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+.box h1:hover::before {
+    width: 100%;
+}

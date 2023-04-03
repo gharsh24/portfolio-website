@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #deddb9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    margin: 1.5% 0 0 5%;
+    height: 100px;
+    width: 110px;
+    border-radius: 80%;
+}
+
+.card-deck{
+    margin-top:8%;
+}
+
+.card{
+    height: 28rem;
+    width: 22rem;
+}
